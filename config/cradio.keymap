@@ -62,7 +62,7 @@
             &none      &none      &none      &none     &none          &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp PSCRN
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │ GUI      │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  SCR LK  │
-            &sk LALT   &sk LGUI   &sk LCTRL  &sk LSHFT  &kp LGUI       &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp SLCK 
+            &sk LALT   &sk LGUI   &sk LCTRL  &sk LSHFT  &kp LGUI       &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT   &kp SLCK 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │  TAB     │  BSPC    │  DEL     │ INSERT   │ PAUSE    │
             &kp K_UNDO &kp K_CUT &kp K_COPY &kp K_PASTE &none          &kp TAB    &kp BSPC   &kp DEL    &kp INS    &kp PAUSE_BREAK
@@ -72,24 +72,26 @@
             >;
         };
 
-        numpad_layer {
+        num_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │          │          │          │          │   │  *       │  7       │  8       │  9       │ -        │
-            &none      &none      &none      &none      &none          &kp MUL     &kp N7     &kp N8     &kp N9    &kp MINUS
+        //│          │          │          │          │          │   │ NM LOCK  │  7       │  8       │  9       │ -        │
+            &none      &none      &none      &none      &none          &kp KP_NUM &kp N7     &kp N8     &kp N9    &kp KP_MINUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │  /       │  4       │  5       │  6       │ +        │
-            &sk LALT   &sk LGUI   &sk LCTRL  &sk LSHFT  &none          &kp DIV    &kp N4     &kp N5     &kp N6     &kp PLUS
+        //│          │          │          │          │          │   │  *       │  4       │  5       │  6       │ +        │
+            &sk LALT   &sk LGUI   &sk LCTRL  &sk LSHFT  &none          &kp MUL    &kp N4     &kp N5     &kp N6     &kp KP_PLUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │  0       │  1       │  2       │  3       │ ENTER    │
-            &none      &none      &none      &none      &none          &kp N0     &kp N1     &kp N2     &kp N3     &kp ENTER
+        //│          │          │          │          │          │   │  /       │  1       │  2       │  3       │ ENTER    │
+            &none      &none      &none      &none      &none          &kp DIV    &kp N1     &kp N2     &kp N3     &kp KP_EQUAL
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┴──────────┴──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
+        //                                 │          │          │   │  0       │  .       │
+                                             &trans     &trans         &kp N0     &kp KP_DOT 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
 
-        left_layer {
+
+       left_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  !       │  @       │  #       │  $       │  %       │   │  ^       │  &       │  *       │  \       │  ' "     │
@@ -99,7 +101,7 @@
             &kp GRAVE  &kp LBKT   &kp LBRC   &kp LPAR   &kp COLON      &kp EQUAL  &kp RPAR   &kp RBRC   &kp RBKT   &kp SEMI 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  ~       │  <       │  _       │  -       │          │   │          │  +       │          │  >       │  │       │
-            &kp TILDE  &kp LT     &kp UNDER  &kp MINUS   &none         &none      &kp plus   &none      &kp GT     &kp PIPE
+            &kp TILDE  &kp LT     &kp UNDER  &kp MINUS   &none         &none      &kp PLUS   &none      &kp GT     &kp PIPE
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
