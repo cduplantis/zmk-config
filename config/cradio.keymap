@@ -45,6 +45,14 @@
 #define ALTTAB LA(TAB)
 #define ALTGRV LA(GRAVE)
 
+#define LGUI_T(k)  &ht LGUI k
+#define LALT_T(k)  &ht LALT k
+#define LSHFT_T(k) &ht LSHFT k
+#define LCTRL_T(k) &ht LCTRL k
+#define RGUI_T(k)  &ht RGUI k
+#define RALT_T(k)  &ht RALT k
+#define RSHFT_T(k) &ht RSHFT k
+#define RCTRL_T(k) &ht RCTRL k
 
 
 
