@@ -34,7 +34,7 @@
 #define GAM2    6
 #define TRI     7
 
-#define MODS DEFAULT SYM NUM
+#define MODS DEFAULT SYM NAV
 
 // define BT MACRO
 #define BT(x) &bt BT_SEL x
