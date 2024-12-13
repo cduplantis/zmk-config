@@ -169,7 +169,7 @@
         default_layer {
             bindings = <
                 &kp Q         &kp W         &kp E       &kp R         &kp T          &kp Y           &kp U        &kp I        &kp O        &kp P
-                LGUI_T(A)     LALT_T(S)    LCTRL_T(A)    LSHFT_T(F)    &kp G         &kp H           RSHFT_T(J)   RCTRL_T(K)   RALT_T(L)    RGUI_T(SQT)
+                LGUI_T(A)     LALT_T(S)    LCTRL_T(D)    LSHFT_T(F)    &kp G         &kp H           RSHFT_T(J)   RCTRL_T(K)   RALT_T(L)    RGUI_T(SQT)
                 &kp Z         &kp X         &kp C       &kp V         &kp B          &kp N           &kp M        &cmsm        &dtcln       &kp FSLH
                                                         &kp TAB       &kp SPACE      &lt SYM SPACE   &lt NUM RETURN
             >;
