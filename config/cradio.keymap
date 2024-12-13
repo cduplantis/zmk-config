@@ -26,10 +26,10 @@
 
 // define layers
 #define DEFAULT 0
-#define NAV     1
-#define NUM     2
-#define SYM     3
-#define FUN     4
+#define NUM     1
+#define SYM     2
+#define FUN     3
+#define NAV     4
 #define GAME    5
 #define GAM2    6
 #define TRI     7
