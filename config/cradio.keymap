@@ -235,7 +235,7 @@
            bindings = <
            &kp Q      &kp W       &kp F       &kp P        &kp B          &kp J           &kp L           &kp U           &kp Y           &kp SQT
            LGUI_T(A)  LALT_T(R)   LCTRL_T(S)  LSHFT_T(T)   &KP G          &KP M           RSHFT_T(N)      RCTRL_T(E)      RALT_T(I)       RGUI_T(O)
-           &kp Z      &kp X       &kp C       &kp D        &kp V          &kp K           &kp H           &cmsm           &dtcln          &kp fslh
+           &kp Z      &kp X       &kp C       &kp D        &kp V          &kp K           &kp H           &cmsm           &dtcln          &kp FSLH
                                               &lt nav tab  &kp spc        &lt sym spc     &lt num return
            >;
        };
