@@ -4,7 +4,7 @@
 
 // Some easier keycode defines
 #define MUL   KP_MULTIPLY
-#define DIV   KP_DIVIDE
+#DEFINE DIV   KP_DIVIDE
 
 // define combos
 #define COMBO(NAME, BINDINGS, LAYERS, KEYPOS) \
@@ -32,7 +32,7 @@
 #define NAV     4
 #define GAME    5
 #define GAM2    6
-#define COL     6
+#define COL     7
 #define TRI     8
 
 #define MODS DEFAULT COL SYM NUM FUN
@@ -250,3 +250,6 @@
        };
     };
 };
+
+
+
